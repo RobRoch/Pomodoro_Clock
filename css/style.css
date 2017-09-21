@@ -1,0 +1,82 @@
+body {
+  background: url(../images/feathers-background.jpg) no-repeat center center fixed;
+  background-image: cover;
+  color: #E2DDDD;
+  padding-top: 2vh;
+  font-family: 'Cabin Sketch', cursive;
+}
+body h1 {
+  font-size: 6vh;
+}
+body .break {
+  margin-left: 40vw;
+  width: 15vw;
+  height: 10vh;
+}
+body .break .break__adjust .break__adjust-minus {
+  user-select: none;
+}
+body .break .break__adjust .break__adjust-minus:hover {
+  cursor: pointer;
+}
+body .break .break__adjust .break__adjust-plus {
+  user-select: none;
+}
+body .break .break__adjust .break__adjust-plus:hover {
+  cursor: pointer;
+}
+body .session {
+  margin-top: -10vh;
+  margin-left: 70vw;
+  width: 20vw;
+}
+body .session .session__adjust .session__adjust-minus {
+  user-select: none;
+}
+body .session .session__adjust .session__adjust-minus:hover {
+  cursor: pointer;
+}
+body .session .session__adjust .session__adjust-plus {
+  user-select: none;
+}
+body .session .session__adjust .session__adjust-plus:hover {
+  cursor: pointer;
+}
+body .series {
+  margin-top: 55vh;
+  margin-left: 50vw;
+  width: 15vw;
+  height: 10vh;
+}
+body .series .series__adjust .series__adjust-minus {
+  user-select: none;
+}
+body .series .series__adjust .series__adjust-minus:hover {
+  cursor: pointer;
+}
+body .series .series__adjust .series__adjust-plus {
+  user-select: none;
+}
+body .series .series__adjust .series__adjust-plus:hover {
+  cursor: pointer;
+}
+body .timer {
+  margin-top: -20vh;
+  margin-left: 70vw;
+  width: 20vw;
+}
+body .timer .timer__container {
+  width: 20vw;
+}
+body .timer .timer__container:hover {
+  cursor: pointer;
+}
+body .timer .timer__container .timer__container-text {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 20vh;
+  text-shadow: 2px 2px 1px #9090E8;
+}
+body .timer .timer__stop:hover {
+  cursor: pointer;
+}

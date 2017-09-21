@@ -1,0 +1,92 @@
+body {
+  background: url(../images/feathers-background.jpg)
+    no-repeat
+    center
+    center
+    fixed;
+  background-image: cover;
+  color: #E2DDDD;
+  padding-top: 2vh;
+  font-family: 'Cabin Sketch', cursive;
+  h1 {
+    font-size: 6vh;
+  } 
+  .break {
+    margin-left: 40vw;
+    width: 15vw;
+    height: 10vh;
+    .break__adjust {
+      .break__adjust-minus {
+        user-select: none;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      .break__adjust-plus {
+        user-select: none;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .session {
+    margin-top: -10vh;
+    margin-left: 70vw;
+    width: 20vw;
+    .session__adjust {
+      .session__adjust-minus {
+        user-select: none;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      .session__adjust-plus {
+        user-select: none;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .series {
+    margin-top: 55vh;
+    margin-left: 50vw;
+    width: 15vw;
+    height: 10vh;
+    .series__adjust {
+      .series__adjust-minus {
+        user-select: none;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      .series__adjust-plus {
+        user-select: none;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .timer {
+    margin-top: -20vh;
+    margin-left: 70vw;
+    width: 20vw;
+    .timer__container {
+      width: 20vw;
+      &:hover {
+        cursor:pointer;
+      }
+      .timer__container-text {
+        text-align: center;
+        vertical-align: middle;
+        line-height: 20vh;
+        text-shadow: 2px 2px 1px #9090E8;
+      }
+    }
+    .timer__stop:hover {
+      cursor:pointer;
+    }
+  }
+}
