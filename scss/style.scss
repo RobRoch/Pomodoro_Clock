@@ -1,20 +1,28 @@
-body {
+@mixin position($left, $top) {
+    position: absolute;
+    left: $left;
+    top: $top;
+}
+
+.wrapper {
   background: url(../images/feathers-background.jpg)
     no-repeat
     center
     center
     fixed;
-  background-image: cover;
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
   color: #E2DDDD;
-  padding-top: 2vh;
   font-family: 'Cabin Sketch', cursive;
   h1 {
-    font-size: 6vh;
+    font-size: 5vw;
   } 
+  h2 {
+    font-size: 3vw;
+  }
   .break {
-    margin-left: 40vw;
-    width: 15vw;
-    height: 10vh;
+    @include position(40vw, 5vh);
     .break__adjust {
       .break__adjust-minus {
         user-select: none;
@@ -31,9 +39,7 @@ body {
     }
   }
   .session {
-    margin-top: -10vh;
-    margin-left: 70vw;
-    width: 20vw;
+    @include position(70vw, 5vh);
     .session__adjust {
       .session__adjust-minus {
         user-select: none;
@@ -50,10 +56,7 @@ body {
     }
   }
   .series {
-    margin-top: 55vh;
-    margin-left: 50vw;
-    width: 15vw;
-    height: 10vh;
+    @include position(40vw, 68vh);
     .series__adjust {
       .series__adjust-minus {
         user-select: none;
@@ -70,9 +73,7 @@ body {
     }
   }
   .timer {
-    margin-top: -20vh;
-    margin-left: 70vw;
-    width: 20vw;
+    @include position(70vw, 60vh);
     .timer__container {
       width: 20vw;
       &:hover {
@@ -87,6 +88,29 @@ body {
     }
     .timer__stop:hover {
       cursor:pointer;
+    }
+  }
+}
+
+@media (max-width:600px) {
+  .wrapper {
+    h1 {
+      font-size: 10vw;
+    } 
+    h2 {
+      font-size: 6vw;
+    }
+    .break {
+      @include position(10vw,10vh);
+    }
+    .session {
+      @include position(50vw,10vh);
+    }
+    .series {
+      @include position(10vw,58vh);
+    }
+    .timer {
+      @include position(60vw,50vh);
     }
   }
 }
